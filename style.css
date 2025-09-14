@@ -1,27 +1,20 @@
-/* Reset & Base */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.6;
-  color: #333;
-  background: #fff;
+  color: #3b2c20;
+  background: #fff8f0;
 }
 
 h1, h2, h3 {
-  color: #b22222; /* red accent */
+  color: #a14425; 
   text-align: center;
 }
-
-section {
-  padding: 2rem 1rem;
-}
-
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #4a2c2a;
   color: #fff;
   padding: 1rem;
 }
@@ -50,7 +43,6 @@ section {
   font-size: 1.5rem;
 }
 
-/* Responsive Nav */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -69,7 +61,6 @@ section {
   }
 }
 
-/* Hero */
 .hero {
   position: relative;
   text-align: center;
@@ -87,11 +78,10 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(74, 44, 42, 0.7);
   padding: 1rem;
 }
 
-/* Specials & Seasonal */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -103,7 +93,7 @@ section {
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  background: #fafafa;
+  background: #fff3e6;
 }
 
 .card img {
@@ -121,7 +111,6 @@ section {
   color: #777;
 }
 
-/* Testimonials */
 .testimonials blockquote {
   background: #f9f9f9;
   border-left: 5px solid #b22222;
@@ -143,9 +132,8 @@ section {
   font-weight: bold;
 }
 
-/* Footer */
 footer {
-  background: #333;
+  background: #4a2c2a;
   color: #fff;
   text-align: center;
   padding: 1.5rem;
