@@ -1,0 +1,170 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  color: #b22222; /* red accent */
+  text-align: center;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+}
+
+/* Specials & Seasonal */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background: #fafafa;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.price {
+  font-weight: bold;
+  color: #b22222;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #b22222;
+  margin: 1rem;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.socials a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.about-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
