@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fran's Flowers</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Fran's Flowers</div>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Fran</a></li>
+        <li><a href="#specials">Weekly Specials</a></li>
+        <li><a href="#seasonal">Seasonal Picks</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="flowers-hero.jpg" alt="Fran smiling with flowers">
+    <div class="hero-text">
+      <h1>Fran's Flowers</h1>
+      <p>Brightening San Francisco since 1995</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Fran's Flowers was founded in 1995 by Francine Miller to share joy, beauty, and connection with the Mission District of San Francisco. Thirty years later we remain rooted in that vision, brightening lives with every bouquet while supporting our community. Ten percent of each sale continues to fund efforts to fight homelessness across the Bay Area.</p>
+    <p>Thank you for helping us grow kindness one flower at a time.</p>
+  </section>
+
+  <!-- Specials -->
+  <section id="specials" class="specials">
+    <h2>Weekly Specials</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="herbs.jpg" alt="Ceramic Potted Herbs">
+        <h3>Ceramic Potted Herbs</h3>
+        <p class="price">$7.99 <span class="old">$12.99</span></p>
+      </div>
+      <div class="card">
+        <img src="wildflowers.jpg" alt="Wildflower Explosion">
+        <h3>Wildflower Explosion</h3>
+        <p class="price">$19.99 <span class="old">$29.99</span></p>
+      </div>
+      <div class="card">
+        <img src="sunflowers.jpg" alt="Sunflower Delight">
+        <h3>Sunflower Delight</h3>
+        <p class="price">$12.99 <span class="old">$19.99</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasonal Picks -->
+  <section id="seasonal" class="seasonal">
+    <h2>Seasonal Picks</h2>
+    <div class="card">
+      <img src="autumn-bouquet.jpg" alt="Autumn Glow Bouquet">
+      <h3>Autumn Glow Bouquet</h3>
+      <p>A warm collection of orange lilies, golden sunflowers, and rustic greens—perfect for fall gatherings.</p>
+      <p class="price">$24.99</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <blockquote>
+        "Fran’s Flowers always brightens my day. The arrangements are stunning and the service is amazing!"
+        <cite>- Maria S.</cite>
+      </blockquote>
+      <blockquote>
+        "I love that every purchase supports the community. Beautiful flowers with a beautiful mission."
+        <cite>- James R.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms of Service</a> | 
+      <a href="#">Careers</a>
+    </div>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Fran's Flowers. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
